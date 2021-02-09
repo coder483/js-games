@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+width: 100%;
+height: 100vh;
+background: radial-gradient(circle, #fff, #ccc);
+}
+#container{
+    width: 650px;
+    height:auto;
+   margin: 0 auto;
+   margin-top:170px ;
+   background-color: #99CEEC;
+   border-radius: 8px;
+   box-shadow: 0px 4px 0px 0px #4684a8e7;
+}
+#innerbody{
+   display: flex;
+   justify-content: flex-end;
+}
+#life{
+    width: 90px;
+    height: 35px;
+    margin:19px auto 0px 16px;
+    border-radius: 3px;
+    background-color: rgb(241, 241, 155);
+    padding: 2px;
+    box-shadow: 0px 4px 0px 0px  #9b9e00e7;
+   display: none;
+}
+#life img{
+    padding: 4px;
+    width: 26px;
+
+}
+#score{
+    margin: 17px;
+    height: 37px;
+    width:90px;
+    background-color:rgb(241, 241, 155);
+    padding: 8px;
+    text-align: center;
+      border-radius: 3px;
+      box-shadow: 0px 4px 0px #9b9e00e7;
+      font-size: 20px;
+      color:green;
+      margin-bottom: 0;
+     visibility: hidden;
+}
+#game_screen{
+    margin: 8px auto;
+    padding:0;
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px #034fdbe7;
+    position: relative;
+    overflow: hidden;
+}
+#game_over{
+    background: linear-gradient(to bottom,rgb(233, 236, 48),rgb(216, 60, 21));
+    width: 400px;
+    height: 200px;
+    position: absolute;
+   bottom: 270px;
+   margin-left: 130px;
+   display: none;
+}
+#game_over p{
+    text-align: center;
+    font-size: 40px;
+    margin: 35px;
+    text-transform: uppercase;
+    color: white;
+}
+#message{
+    font-size: 50px;
+    text-align: center;
+    padding: 24px;
+    color: white;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
+#catch_fruits{
+ text-align:center;
+background-color: #B78ADC;
+padding: 14px;
+width: 450px;
+margin: 0 auto;
+box-shadow: 0px 4px 0px #ac0479e7;
+border-radius: 2px;
+font-size: 20px;
+}
+#start_reset{
+    text-align: center;
+}
+#start{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #CBE6F6;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px #034fdbe7;
+    text-transform: capitalize;
+}
+#start:focus{
+   margin-top:8px ;
+   transition: 4s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+  }

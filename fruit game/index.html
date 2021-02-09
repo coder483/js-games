@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <div id="container">
+        <div id="innerbody">
+            <div id="life">
+               <div id="trial">
+               </div>
+            </div>
+            <p id="score">score: <span id="value">0</span></p>
+        </div>
+      <div id="game_screen">
+          <img src="images/watermelon.png" alt="not found" id="fruits" class="fruit">
+      </div>
+      <div id="game_over">
+        <p id="message"> Game over <br>your score is <span id ='value'>0</span></p>
+     </div>
+     <audio id='slicesound'>
+         <source src="audio/19312_martian_classic-double-swwosh (online-audio-converter.com).mp3"></source>
+            <source src="audio/19312_martian_classic-double-swwosh (online-audio-converter.com).ogg"></source>
+            <embed id='slicesound'src="audio/19312_martian_classic-double-swwosh (online-audio-converter.com).ogg" autostart=false loop=false>
+     </audio>
+      <p id="catch_fruits">catch fruits</p>
+      <div id="start_reset">
+          <button id="start"><span id='value'>Start Game</span></button>
+      </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="index.js"></script>
+</html>
